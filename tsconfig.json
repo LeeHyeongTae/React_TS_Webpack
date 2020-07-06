@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6", // 사용할 ECMAScript 버전 설정
+    "noImplicitAny": false,
     "lib": [
       "dom",
       "dom.iterable",
@@ -9,11 +10,11 @@
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true, // export default를 export한 값들을 가지는 객체로 설정
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "CommonJS", //모듈설정
+    "moduleResolution": "node", // 모듈(검색)해석 방식 설정
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
